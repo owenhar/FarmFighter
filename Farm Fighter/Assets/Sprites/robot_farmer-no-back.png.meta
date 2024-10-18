@@ -1,0 +1,1953 @@
+fileFormatVersion: 2
+guid: 221a7fa181713f64ab291d069fed65cd
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: robot_farmer-no-back_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 121
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4a846148db95d4b974a7fca2087205
+      internalID: -240773185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 120
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd26abec46f60c429e2359214a6432e
+      internalID: -1943388051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 120
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8506ed255774524e90cb8869e887c5d
+      internalID: 1517081065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_3
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 104
+        width: 14
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8f6aae34239b64db870a10686985fa
+      internalID: -1751426454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 104
+        width: 14
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc7d3c4ede42c740b49f98daa28d030
+      internalID: -701647152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_5
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 132
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fb9c16e9361a94fbc944080f487fdc
+      internalID: -849924498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_6
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 132
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98451a1227b440946a954f344b74f177
+      internalID: -530366867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_7
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 132
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8507a51a6478d8742ab9c5d3c5e41a16
+      internalID: 1322744552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_8
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4657331eef05b141a0a8eb297ff7b6d
+      internalID: -249282304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_9
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceced85497161c44995cbd50848bddde
+      internalID: 796040624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_10
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221cc60ecb822be48b75e6db909a835a
+      internalID: -911271049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_11
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448a633a48e978141af218d9822d9ff0
+      internalID: 637070069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_12
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 047e9731645d76f489ece4f2469da2d8
+      internalID: -777703238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_13
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ad048099b537a144b7b30380da7c7e6
+      internalID: 2134818307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_14
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87c291243b8d5140a4e1ab0e7120cd6
+      internalID: -1675572997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_15
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c43821ec4901054bae5ab4b0b487106
+      internalID: 1468842115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_16
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e70ec3a3f6c2f4d449c69c3013fa2bc0
+      internalID: 1204686172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_17
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 138
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8dec1718d7e2914eb079d352b8df15a
+      internalID: 108574819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_18
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1233320e36f0343afe05a179bcc5d5
+      internalID: -645901557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_19
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 138
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8d7422900bf254797a86ef7e78a75c
+      internalID: -753032971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_20
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 145
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574e78da1abb3604380536cd7e99f882
+      internalID: -2071867248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_21
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f2c0e82fd8a5f4ab3214f5b0b61dec
+      internalID: -1539630523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_22
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5351b1aa399e31c4ab8c85b060c11f35
+      internalID: 246180742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_23
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d789bc21c1db54d8f81c73e210f10b
+      internalID: 1686287742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_24
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b54371d1baf221748aed5f2f43714a0c
+      internalID: -872622296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_25
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 997b10bd729d58a479521762154aa899
+      internalID: -1779994024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_26
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97575f93342cbe64f85e7d02525f93bb
+      internalID: -1560136952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_27
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5b7871407f6aa44d96b3c9f6855aece
+      internalID: 1047858877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_28
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e7cd90908a6294ca2a272e60c5dce7
+      internalID: -2117328330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_29
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bd4c3e15ac6584e81e79c6244fec76
+      internalID: -1685929430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_30
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 129
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab3e36f8c3d38b43839971c635b4534
+      internalID: 563850175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_31
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 129
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 794e4461d18f13643bf46222895e355a
+      internalID: 471879601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_32
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 122
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37b43e82d9da24d4ab16db4b3f406f64
+      internalID: -1628110741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_33
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 122
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d052ed15a3b554b974804d87c405a9
+      internalID: -407158614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_34
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 127
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a354495574c6e1e4882c3717a2e099cd
+      internalID: 1468027471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_35
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 127
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e5b8d9c7b9d1347b1306c505ffddfc
+      internalID: 1881732816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_36
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 127
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a98cfad1c23d74bb868b3b4456fa34
+      internalID: 1757150371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_37
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 127
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eafd82801a92cd45b7edcdc4e0a0488
+      internalID: 1800411685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_38
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 127
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7a4c9fcba0cad4da33ac2a6a0c3d45
+      internalID: -114581638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_39
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 127
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c8e6fd5b5a425488041aca4908507e
+      internalID: 2072921225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_40
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 127
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e572ae89c19814a9c6bf2887c88042
+      internalID: 68549639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_41
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 104
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab6b1d539324694590977737927ad4f
+      internalID: -1055750354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_42
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb0b6beae897e3148b5074b2f1dd9461
+      internalID: -1540946395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_43
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8d067808e1d21940afec18c229b2c72
+      internalID: -308138197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_44
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b314e8e893e11a84385d4c0e7ddba831
+      internalID: 1957640958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_45
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c0244c4ebbe584985e0c44964ce747
+      internalID: 260998978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_46
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dbaba4ae431b52468e7958d05f7e4b4
+      internalID: -51945621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_47
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba7444f0fed44d45a599c42f1de80b4
+      internalID: -2014652239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_48
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 118
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eec50dbfe46ca14498d7457aee65e62
+      internalID: 52907996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_49
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 106
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92da5a81f6260443b5af7337229f67d
+      internalID: -57629934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_50
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 106
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f18dd7fe0b7cd0d49a46a7a5e467adcb
+      internalID: 444702680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_51
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 113
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efc9451b370a6840aa3f226a2490384
+      internalID: -922288297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_52
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 106
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa200dc9b6cbd8648b6f055f02874d00
+      internalID: 1525533104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_53
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 89
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188eb33630d55bb4aa598b77bc02ff45
+      internalID: 428227239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_54
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 88
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc519c5361d4378479b3d4f0f6cc9dda
+      internalID: 1131786373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_55
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 88
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ae56fe62a49024e99594c79b22c69f
+      internalID: -1848145432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_56
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 108
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fad09398eef1f4eb34f22eebb6af53
+      internalID: -1624557903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_57
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0183e17f134912e409425596ba4d6218
+      internalID: -1417293454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_58
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 109
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccefa24aa61c88a44a3eab6a25f107d4
+      internalID: 850268672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_59
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 97
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fbb0b931ca08dc47b17bbea4bb1a1a4
+      internalID: 221551468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_60
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 97
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4db0b2906e39e3498edc67a0644097a
+      internalID: -197430014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_61
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 59
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03043b9600ec43348a09e0900c47b430
+      internalID: -1469851912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_62
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 59
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe6190b48e95094eabed8379c5f8afe
+      internalID: 1998026146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_63
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 59
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cad883eb4164924aab9cb949c1d5e42
+      internalID: 1414817373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_64
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 31
+        width: 36
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a294930f3b09e5742817fb87f3de9054
+      internalID: -1629492372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_65
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 32
+        width: 83
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e37675e6f1ed9347a1109016a614144
+      internalID: 1732314106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_66
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 74
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2804e07daf4dc974c9bf1cd975419c26
+      internalID: -563615205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_67
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 81
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4425ba810b7fb4eb1eb5b76fcf9ff3
+      internalID: 355450367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_68
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 30
+        width: 13
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2bf52a62987ba4eb8724da4e62eccc
+      internalID: 1762674601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_69
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 30
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09e32d168e18534c96416700d12e4dc
+      internalID: 2048716710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_70
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 30
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81caf1b7191f1749b3ee0b62b02f97c
+      internalID: 1648794687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_71
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 30
+        width: 42
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d570345248d5b648a198c910fb81aaa
+      internalID: -1884579056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_72
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 25
+        width: 32
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2ed322e2b13584c93e9c016ebe47f9
+      internalID: 205163567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_73
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97beb47c7ab367644a2d2cdd0a65949f
+      internalID: 1095919110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_74
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfeda58acd28a3f4eb97fa3f8bdb5ce0
+      internalID: -1478784978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_75
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4237320d6781f34a99665a176250680
+      internalID: -1139335332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_76
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 120e01e9c6777564e9fe3521ed17155e
+      internalID: 106650217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_77
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cb40be3d42b6b4c8c89a6918a13bff
+      internalID: 1176121499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_78
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f1a6f95200e7bd4e93fbf73c49e741d
+      internalID: 1215503688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_79
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b885f3dc18b2f4d4fb7e6f4aebd1fc84
+      internalID: 331128395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_80
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69d66b3c98a37dd4ebf04e607f654a91
+      internalID: 1054486374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_81
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5591c3c526486004cb1d7199e6241099
+      internalID: -2137251647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_farmer-no-back_82
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bb930bcb98736649ac5d4ee11b618fd
+      internalID: 1717761824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      robot_farmer-no-back_0: -240773185
+      robot_farmer-no-back_1: -1943388051
+      robot_farmer-no-back_10: -911271049
+      robot_farmer-no-back_11: 637070069
+      robot_farmer-no-back_12: -777703238
+      robot_farmer-no-back_13: 2134818307
+      robot_farmer-no-back_14: -1675572997
+      robot_farmer-no-back_15: 1468842115
+      robot_farmer-no-back_16: 1204686172
+      robot_farmer-no-back_17: 108574819
+      robot_farmer-no-back_18: -645901557
+      robot_farmer-no-back_19: -753032971
+      robot_farmer-no-back_2: 1517081065
+      robot_farmer-no-back_20: -2071867248
+      robot_farmer-no-back_21: -1539630523
+      robot_farmer-no-back_22: 246180742
+      robot_farmer-no-back_23: 1686287742
+      robot_farmer-no-back_24: -872622296
+      robot_farmer-no-back_25: -1779994024
+      robot_farmer-no-back_26: -1560136952
+      robot_farmer-no-back_27: 1047858877
+      robot_farmer-no-back_28: -2117328330
+      robot_farmer-no-back_29: -1685929430
+      robot_farmer-no-back_3: -1751426454
+      robot_farmer-no-back_30: 563850175
+      robot_farmer-no-back_31: 471879601
+      robot_farmer-no-back_32: -1628110741
+      robot_farmer-no-back_33: -407158614
+      robot_farmer-no-back_34: 1468027471
+      robot_farmer-no-back_35: 1881732816
+      robot_farmer-no-back_36: 1757150371
+      robot_farmer-no-back_37: 1800411685
+      robot_farmer-no-back_38: -114581638
+      robot_farmer-no-back_39: 2072921225
+      robot_farmer-no-back_4: -701647152
+      robot_farmer-no-back_40: 68549639
+      robot_farmer-no-back_41: -1055750354
+      robot_farmer-no-back_42: -1540946395
+      robot_farmer-no-back_43: -308138197
+      robot_farmer-no-back_44: 1957640958
+      robot_farmer-no-back_45: 260998978
+      robot_farmer-no-back_46: -51945621
+      robot_farmer-no-back_47: -2014652239
+      robot_farmer-no-back_48: 52907996
+      robot_farmer-no-back_49: -57629934
+      robot_farmer-no-back_5: -849924498
+      robot_farmer-no-back_50: 444702680
+      robot_farmer-no-back_51: -922288297
+      robot_farmer-no-back_52: 1525533104
+      robot_farmer-no-back_53: 428227239
+      robot_farmer-no-back_54: 1131786373
+      robot_farmer-no-back_55: -1848145432
+      robot_farmer-no-back_56: -1624557903
+      robot_farmer-no-back_57: -1417293454
+      robot_farmer-no-back_58: 850268672
+      robot_farmer-no-back_59: 221551468
+      robot_farmer-no-back_6: -530366867
+      robot_farmer-no-back_60: -197430014
+      robot_farmer-no-back_61: -1469851912
+      robot_farmer-no-back_62: 1998026146
+      robot_farmer-no-back_63: 1414817373
+      robot_farmer-no-back_64: -1629492372
+      robot_farmer-no-back_65: 1732314106
+      robot_farmer-no-back_66: -563615205
+      robot_farmer-no-back_67: 355450367
+      robot_farmer-no-back_68: 1762674601
+      robot_farmer-no-back_69: 2048716710
+      robot_farmer-no-back_7: 1322744552
+      robot_farmer-no-back_70: 1648794687
+      robot_farmer-no-back_71: -1884579056
+      robot_farmer-no-back_72: 205163567
+      robot_farmer-no-back_73: 1095919110
+      robot_farmer-no-back_74: -1478784978
+      robot_farmer-no-back_75: -1139335332
+      robot_farmer-no-back_76: 106650217
+      robot_farmer-no-back_77: 1176121499
+      robot_farmer-no-back_78: 1215503688
+      robot_farmer-no-back_79: 331128395
+      robot_farmer-no-back_8: -249282304
+      robot_farmer-no-back_80: 1054486374
+      robot_farmer-no-back_81: -2137251647
+      robot_farmer-no-back_82: 1717761824
+      robot_farmer-no-back_9: 796040624
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
