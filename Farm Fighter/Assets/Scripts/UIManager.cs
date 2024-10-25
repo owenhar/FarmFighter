@@ -2,15 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
 
-    [SerializeField] TextMeshProUGUI healthText;
+    [SerializeField] Slider healthSlider;
+    [SerializeField] Slider staminaSlider;
+    [SerializeField] Slider waterSlider;
+
     // Start is called before the first frame update
     void Start()
     {
-        MyEvents.playerHealthUpdate.AddListener(UpdateHealthText);
+        MyEvents.playerHealthUpdate.AddListener(UpdateHealthSlider);
+        MyEvents.playerStaminaUpdate.AddListener(UpdateStaminaSlider);
+        MyEvents.playerWaterUpdate.AddListener(UpdateWaterSlider);
+
     }
 
     // Update is called once per frame
@@ -19,10 +26,22 @@ public class UIManager : MonoBehaviour
         
     }
 
-    void UpdateHealthText(int health)
+    void UpdateHealthSlider(float health)
     {
-        healthText.text = "Health: " + health + "/100";
+        healthSlider.value = health;
     }
+
+    void UpdateStaminaSlider(float stamina)
+    {
+        staminaSlider.value = stamina;
+    }
+
+    void UpdateWaterSlider(float water)
+    {
+        waterSlider.value = water;
+    }
+
+
 
     
 }

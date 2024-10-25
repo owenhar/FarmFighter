@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Weapon : MonoBehaviour
 {
@@ -8,14 +9,14 @@ public class Weapon : MonoBehaviour
     float timer = 0;
     bool attackDisabled = false;
     [SerializeField] float attackDelay = 2.0f;
-    Collider2D cd;
-
-    List<Enemy> inRadius = new List<Enemy>();
+    CircleCollider2D cd;
+    Player p;
 
     // Start is called before the first frame update
     void Start()
     {
-        cd = gameObject.GetComponent<Collider2D>();
+        cd = gameObject.GetComponent<CircleCollider2D>();
+        p = gameObject.GetComponentInParent<Player>();
     }
 
     // Update is called once per frame
@@ -34,45 +35,19 @@ public class Weapon : MonoBehaviour
                 attackDisabled = false;
             }
         }
-        if (Input.GetButtonDown("Fire1") && !attackDisabled)
+        if (Input.GetButtonDown("Fire1") && !attackDisabled && p.GetStamina() > 10)
         {
             List<GameObject> toKill = new List<GameObject>();
-            foreach (Enemy enemy in inRadius)
+            Collider2D[] collisions = Physics2D.OverlapCircleAll(transform.position, cd.radius);
+            foreach (Collider2D collision in collisions)
             {
-                toKill.Add(enemy.gameObject);
+                Debug.Log("found a " + collision.tag);
+                if (collision.tag == "Enemy")
+                {
+                    collision.GetComponent<Enemy>().DamageEnemy(1);
+                }
             }
-
-            foreach (GameObject go in toKill)
-            {
-                Destroy(go);
-                MyEvents.enemyKilled.Invoke();
-            }
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Enemy")
-        {
-            Debug.Log("Added Enemy");
-            inRadius.Add(collision.gameObject.GetComponent<Enemy>());
-        }
-    }
-
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Enemy")
-    //    {
-    //        inRadius.Add(collision.gameObject.GetComponent<Enemy>());
-    //    }
-    //}
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Enemy")
-        {
-            Debug.Log("Removed Enemy");
-            inRadius.Remove(collision.gameObject.GetComponent<Enemy>());
+            p.UseStamina(10);
         }
     }
 }

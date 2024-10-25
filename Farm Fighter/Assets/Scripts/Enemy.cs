@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,8 +11,12 @@ public class Enemy : MonoBehaviour
     [SerializeField] float moveSpeed = 10f;
     [SerializeField] float attackDelay = 2.0f;
     [SerializeField] int damage = 10;
+    [SerializeField] float maxHealth = 2f;
+    float health;
     float timer = 0;
-    bool attackDisabled = false;
+    bool attackDisabled = true;
+
+    Slider healthBar;
     
 
     // Start is called before the first frame update
@@ -19,6 +24,8 @@ public class Enemy : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         cd = gameObject.GetComponent<Collider2D>();
+        healthBar = gameObject.GetComponentInChildren<Slider>();
+        health = maxHealth;
     }
 
     // Update is called once per frame
@@ -30,8 +37,7 @@ public class Enemy : MonoBehaviour
             if (timer >= attackDelay)
             {
                 timer = 0;
-                cd.enabled = true;
-                attackDisabled = false;
+                Attack();
             }
         }
         TrackPlayer();
@@ -51,15 +57,37 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<Player>().DamagePlayer(damage);
-            cd.enabled = false;
+            //cd.enabled = false;
             attackDisabled = true;
         }
-        
     }
 
-    public void DamageEnemy()
+    public void DamageEnemy(float damage)
     {
-        
+        health -= damage;
+        UpdateHealthBar();
+        if (health <= 0 )
+        {
+            Destroy(gameObject);
+            MyEvents.enemyKilled.Invoke();
+        }
+    }
+
+    void UpdateHealthBar()
+    {
+        healthBar.value = health / maxHealth;
+    }
+
+    public void Attack()
+    {
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1);
+        foreach (Collider2D c in colliders)
+        {
+            if (c.CompareTag("Player"))
+            {
+                c.gameObject.GetComponent<Player>().DamagePlayer(10);
+            }
+        }
     }
 
 }

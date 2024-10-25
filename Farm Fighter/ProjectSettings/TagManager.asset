@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Weapon
+  - Seed
   layers:
   - Default
   - TransparentFX
