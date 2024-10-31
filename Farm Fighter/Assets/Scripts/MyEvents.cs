@@ -9,5 +9,7 @@ public static class MyEvents
     public static UnityEvent<float> playerStaminaUpdate = new UnityEvent<float>();
     public static UnityEvent<float> playerWaterUpdate = new UnityEvent<float>();
 
+    public static UnityEvent<int> xpGain = new UnityEvent<int>();
+
     public static UnityEvent enemyKilled = new UnityEvent();
 }

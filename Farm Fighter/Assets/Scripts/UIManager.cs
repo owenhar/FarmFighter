@@ -10,6 +10,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] Slider healthSlider;
     [SerializeField] Slider staminaSlider;
     [SerializeField] Slider waterSlider;
+    [SerializeField] TextMeshProUGUI xpText;
+    int xp = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +19,7 @@ public class UIManager : MonoBehaviour
         MyEvents.playerHealthUpdate.AddListener(UpdateHealthSlider);
         MyEvents.playerStaminaUpdate.AddListener(UpdateStaminaSlider);
         MyEvents.playerWaterUpdate.AddListener(UpdateWaterSlider);
+        MyEvents.xpGain.AddListener(UpdateXpText);
 
     }
 
@@ -39,6 +42,12 @@ public class UIManager : MonoBehaviour
     void UpdateWaterSlider(float water)
     {
         waterSlider.value = water;
+    }
+
+    void UpdateXpText(int xpGain)
+    {
+        xp += xpGain;
+        xpText.text = "XP: " + xp;
     }
 
 

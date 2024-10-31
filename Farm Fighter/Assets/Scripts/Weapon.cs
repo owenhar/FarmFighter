@@ -11,12 +11,14 @@ public class Weapon : MonoBehaviour
     [SerializeField] float attackDelay = 2.0f;
     CircleCollider2D cd;
     Player p;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         cd = gameObject.GetComponent<CircleCollider2D>();
         p = gameObject.GetComponentInParent<Player>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -37,6 +39,7 @@ public class Weapon : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1") && !attackDisabled && p.GetStamina() > 10)
         {
+            animator.SetTrigger("Swing");
             List<GameObject> toKill = new List<GameObject>();
             Collider2D[] collisions = Physics2D.OverlapCircleAll(transform.position, cd.radius);
             foreach (Collider2D collision in collisions)
@@ -48,6 +51,7 @@ public class Weapon : MonoBehaviour
                 }
             }
             p.UseStamina(10);
+            
         }
     }
 }

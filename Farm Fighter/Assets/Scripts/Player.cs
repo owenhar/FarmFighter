@@ -81,6 +81,26 @@ public class Player : MonoBehaviour
             changed = true;
             selectedItem = 2;
         }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            changed = true;
+            selectedItem = 3;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            changed = true;
+            selectedItem = 4;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            changed = true;
+            selectedItem = 5;
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha7))
+        {
+            changed = true;
+            selectedItem = 6;
+        }
         if (changed) {
             ChangeSelectedItem();
         }

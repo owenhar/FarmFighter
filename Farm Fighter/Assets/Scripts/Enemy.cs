@@ -68,8 +68,8 @@ public class Enemy : MonoBehaviour
         UpdateHealthBar();
         if (health <= 0 )
         {
+            MyEvents.xpGain.Invoke(15);
             Destroy(gameObject);
-            MyEvents.enemyKilled.Invoke();
         }
     }
 
