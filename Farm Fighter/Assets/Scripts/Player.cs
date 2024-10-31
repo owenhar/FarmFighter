@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
     private int health = 100;
     [SerializeField] float maxStamina = 100f;
     [SerializeField] float staminaRegenPerSecond = 20f;
-    [SerializeField] List<SpriteRenderer> slots;
+    [SerializeField] List<GameObject> slots;
     [SerializeField] List<GameObject> items;
     [SerializeField] Color nonSelectedColor;
     [SerializeField] Color selectedColor;
@@ -110,12 +110,14 @@ public class Player : MonoBehaviour
 
     public void ChangeSelectedItem()
     {
-        foreach (SpriteRenderer sr in slots)
+        foreach (GameObject go in slots)
         {
+            Debug.Log(go);
+            UnityEngine.UI.Image sr = go.GetComponent<UnityEngine.UI.Image>();
             sr.color = nonSelectedColor;
         }
-        Debug.Log(selectedItem);
-        slots[selectedItem].color = selectedColor;
+        UnityEngine.UI.Image sr1 = slots[selectedItem].GetComponent<UnityEngine.UI.Image>();
+        sr1.color = selectedColor;
 
         foreach (GameObject go in items)
         {
