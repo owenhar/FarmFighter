@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,10 +15,22 @@ public class Player : MonoBehaviour
     [SerializeField] float staminaRegenPerSecond = 20f;
     [SerializeField] List<GameObject> slots;
     [SerializeField] List<GameObject> items;
+    List<int> inventoryCount = new List<int>();
     [SerializeField] Color nonSelectedColor;
     [SerializeField] Color selectedColor;
+    [SerializeField] List<Sprite> walkingSprites;
     private int selectedItem = 0;
     private float stamina;
+    private int xp = 0;
+    private int lvl = 1;
+    private float damageMultiplier = 1.0f;
+
+    public float GetDamageMultiplier()
+    {
+        return damageMultiplier;
+    }
+
+  
 
     Rigidbody2D rb;
     // Start is called before the first frame update
@@ -26,6 +39,15 @@ public class Player : MonoBehaviour
         rb = gameObject.GetComponent<Rigidbody2D>();
         health = maxHealth;
         stamina = maxStamina;
+        int i = 0;
+        foreach (GameObject _ in slots)
+        {
+            inventoryCount.Add(1);
+            MyEvents.inventoryCountUpdate.Invoke(i, 1);
+            i++;
+        }
+        MyEvents.updateInventoryCount.AddListener(ChangeValueOfItem);
+        MyEvents.xpGain.AddListener(IncreaseXP);
     }
 
     // Update is called once per frame
@@ -44,8 +66,10 @@ public class Player : MonoBehaviour
     {
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
-
         Vector3 move = new Vector3(moveX, moveY);
+
+
+
         move.Normalize();
 
         transform.Translate(move * moveSpeed * Time.deltaTime);
@@ -109,6 +133,7 @@ public class Player : MonoBehaviour
     public int DamagePlayer(int damage)
     {
         health -= damage;
+        health = Mathf.Clamp(health, 0, maxHealth);
         MyEvents.playerHealthUpdate.Invoke((float) health / maxHealth);
         if (health <= 0)
         {
@@ -128,11 +153,43 @@ public class Player : MonoBehaviour
         MyEvents.playerStaminaUpdate.Invoke(stamina / maxStamina);
     }
 
+    private void IncreaseXP(int amount)
+    {
+        xp += amount;
+        if (xp / 100 >= lvl) {
+            LevelUp();
+        }
+    }
+
+    private void LevelUp()
+    {
+        lvl += 1;
+        if (lvl % 2 == 0)
+        {
+            damageMultiplier += 0.1f;
+            MyEvents.displayAlertMessage.Invoke("LVL UP -- Damage Multiplier: " + damageMultiplier);
+        } else
+        {
+            maxHealth += 20;
+            MyEvents.displayAlertMessage.Invoke("LVL UP -- Max Health: " + maxHealth);
+        }
+    }
+
+    public int GetAllItemCount(int index)
+    {
+        return inventoryCount[index];
+    }
+
+    public void ChangeValueOfItem(int index, int value)
+    {
+        inventoryCount[index] += value;
+        MyEvents.inventoryCountUpdate.Invoke(index, inventoryCount[index]);
+    }
+
     public void ChangeSelectedItem()
     {
         foreach (GameObject go in slots)
         {
-            Debug.Log(go);
             UnityEngine.UI.Image sr = go.GetComponent<UnityEngine.UI.Image>();
             sr.color = nonSelectedColor;
         }
@@ -147,5 +204,13 @@ public class Player : MonoBehaviour
         items[selectedItem].SetActive(true);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Pickup"))
+        {
+            IPickUp item = collision.gameObject.GetComponent<IPickUp>();
+            item.PickUp(this);
+        }
+    }
 
 }

@@ -149,6 +149,13 @@ MonoBehaviour:
   attackDelay: 2
   damage: 10
   maxHealth: 2
+  drops:
+  - {fileID: 8988787402835003249, guid: 18d278a343e94c14283b1284f3e649d0, type: 3}
+  - {fileID: 2758627957162564858, guid: c7686143f9aa23e44a7bf0270c35f684, type: 3}
+  - {fileID: 8821741024769452561, guid: bf179fb517c30654ca53e5acbb9eeaa8, type: 3}
+  - {fileID: 5310902361486537995, guid: 09b6289234aac044fbe0d563c01d0428, type: 3}
+  - {fileID: 8179919245208931785, guid: 8cdebfc0ded57e949a5e2a907ea4859f, type: 3}
+  - {fileID: 8611579610523004082, guid: b0192f8107a06db49940110af1c95067, type: 3}
 --- !u!50 &4972210315726787326
 Rigidbody2D:
   serializedVersion: 4

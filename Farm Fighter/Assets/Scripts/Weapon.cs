@@ -44,10 +44,9 @@ public class Weapon : MonoBehaviour
             Collider2D[] collisions = Physics2D.OverlapCircleAll(transform.position, cd.radius);
             foreach (Collider2D collision in collisions)
             {
-                Debug.Log("found a " + collision.tag);
                 if (collision.tag == "Enemy")
                 {
-                    collision.GetComponent<Enemy>().DamageEnemy(1);
+                    collision.GetComponent<Enemy>().DamageEnemy(1 * p.GetDamageMultiplier());
                 }
             }
             p.UseStamina(10);

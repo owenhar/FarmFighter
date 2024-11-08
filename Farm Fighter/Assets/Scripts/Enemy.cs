@@ -12,6 +12,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] float attackDelay = 2.0f;
     [SerializeField] int damage = 10;
     [SerializeField] float maxHealth = 2f;
+    [SerializeField] List<GameObject> drops;
     float health;
     float timer = 0;
     bool attackDisabled = true;
@@ -68,7 +69,9 @@ public class Enemy : MonoBehaviour
         UpdateHealthBar();
         if (health <= 0 )
         {
+
             MyEvents.xpGain.Invoke(15);
+            DropItem();
             Destroy(gameObject);
         }
     }
@@ -76,6 +79,21 @@ public class Enemy : MonoBehaviour
     void UpdateHealthBar()
     {
         healthBar.value = health / maxHealth;
+    }
+
+    void DropItem()
+    {
+        int randChoice = Random.Range(0, 3);
+        if (randChoice == 0) {
+            Instantiate(drops[0], transform.position, Quaternion.identity);
+        } else if (randChoice == 1)
+        {
+
+        } else
+        {
+            int randIndex = Random.Range(0, drops.Count);
+            Instantiate(drops[randIndex], transform.position, Quaternion.identity);
+        }
     }
 
     public void Attack()

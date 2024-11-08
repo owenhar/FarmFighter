@@ -7,6 +7,7 @@ public class WateringCan : MonoBehaviour
 {
     [SerializeField] float wateringSpeed = 3f;
     [SerializeField] float maxWaterAmount = 100f;
+    [SerializeField] GameObject waterPrefab;
     float waterAmount;
    
     // Start is called before the first frame update
@@ -28,11 +29,11 @@ public class WateringCan : MonoBehaviour
             Vector3 mouseLocation = Input.mousePosition;
             Vector3 worldCord = Camera.main.ScreenToWorldPoint(mouseLocation);
             worldCord.z = 0;
-
+            Vector3 waterCord = worldCord + new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f)).normalized * Random.Range(-2f, 2f);
+            Instantiate(waterPrefab, waterCord, Quaternion.identity);
             Collider2D[] collisions = Physics2D.OverlapCircleAll(worldCord, 2);
             foreach (Collider2D c in collisions)
             {
-                Debug.Log(c.tag);
                 if (c.CompareTag("Seed"))
                 {
                     c.gameObject.GetComponent<EnemySpawner>().Grow(wateringSpeed * Time.deltaTime);
