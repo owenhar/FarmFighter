@@ -16,4 +16,8 @@ public static class MyEvents
     public static UnityEvent<int> xpGain = new UnityEvent<int>();
 
     public static UnityEvent enemyKilled = new UnityEvent();
+    public static UnityEvent plantPlanted = new UnityEvent();
+    public static UnityEvent endGame = new UnityEvent();
+
+
 }

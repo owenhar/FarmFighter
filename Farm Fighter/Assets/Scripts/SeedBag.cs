@@ -28,6 +28,7 @@ public class SeedBag : MonoBehaviour
             Vector3 worldCord = Camera.main.ScreenToWorldPoint(mouseLocation);
             worldCord.z = 0;
             Instantiate(seed, worldCord, Quaternion.identity);
+            MyEvents.plantPlanted.Invoke();
             player.ChangeValueOfItem(inventoryIndex, -1);
         }
     }

@@ -24,7 +24,7 @@ public class Player : MonoBehaviour
     private int xp = 0;
     private int lvl = 1;
     private float damageMultiplier = 1.0f;
-
+    private bool dead = false;
     public float GetDamageMultiplier()
     {
         return damageMultiplier;
@@ -53,7 +53,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Move();
+        if (!dead)
+        {
+            Move();
+        }
         if (stamina < maxStamina)
         {
             stamina = Mathf.Clamp(stamina + (Time.deltaTime * staminaRegenPerSecond), 0, maxStamina);
@@ -137,7 +140,14 @@ public class Player : MonoBehaviour
         MyEvents.playerHealthUpdate.Invoke((float) health / maxHealth);
         if (health <= 0)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            MyEvents.endGame.Invoke();
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            dead = true;
+            foreach (SpriteRenderer sr in gameObject.GetComponentsInChildren<SpriteRenderer>())
+            {
+                sr.enabled = false;
+            }
         }
         return health;
     }

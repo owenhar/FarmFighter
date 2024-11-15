@@ -71,6 +71,7 @@ public class Enemy : MonoBehaviour
         {
 
             MyEvents.xpGain.Invoke(15);
+            MyEvents.enemyKilled.Invoke();
             DropItem();
             Destroy(gameObject);
         }

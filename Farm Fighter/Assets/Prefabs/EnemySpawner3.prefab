@@ -378,7 +378,11 @@ MonoBehaviour:
   adult: {fileID: -1205065165, guid: 120b5dc696b507e4a80f71895f916fa4, type: 3}
   growthBar: {fileID: 0}
   growthReq: 10
-  spawnDelay: 3
+  spawnDelay: 4
+  avgProjectileSpawnInterval: 5
+  projectilePrefab: {fileID: 3020365689515984511, guid: 3e9e8f8023aee6342b0658e5fabbdf1e, type: 3}
+  projectileColor: {r: 1, g: 0, b: 0.7893872, a: 1}
+  spawnEnabled: 1
 --- !u!58 &4671045663817948538
 CircleCollider2D:
   m_ObjectHideFlags: 0
