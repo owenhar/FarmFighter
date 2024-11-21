@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -20,6 +22,8 @@ public class UIManager : MonoBehaviour
     [SerializeField] TextMeshProUGUI finalXPText;
     [SerializeField] TextMeshProUGUI plantText;
     [SerializeField] GameObject panel;
+    [SerializeField] TextMeshProUGUI scoreboard;
+    [SerializeField] TMP_InputField input;
 
 
 
@@ -32,6 +36,7 @@ public class UIManager : MonoBehaviour
     int plants = 0;
     float timeSurvived = 0;
     bool gameRunning = true;
+    bool hasSubmittedScore = false;
 
     private void Awake()
     {
@@ -119,6 +124,9 @@ public class UIManager : MonoBehaviour
 
     void GameEnded()
     {
+        if (gameRunning == false) {
+            return; // Don't want this function running multiple times
+        }
         panel.SetActive(true);
         gameRunning = false;
         if (timeSurvived > 60)
@@ -133,11 +141,52 @@ public class UIManager : MonoBehaviour
         finalXPText.text = xp.ToString();
         plantText.text = plants.ToString();
         panel.SetActive(true);
+
+        StartCoroutine(GetLeaderboard());
+    }
+
+    IEnumerator GetLeaderboard()
+    {
+        UnityWebRequest uwr = UnityWebRequest.Get("https://scoreboard.harrisowe.me/leaderboard/");
+        yield return uwr.SendWebRequest();
+
+        if (uwr.result == UnityWebRequest.Result.ConnectionError)
+        {
+            Debug.Log("Failed to retrieve leaderboard");
+        }
+        else
+        {
+            Scores scores = JsonUtility.FromJson<Scores>(uwr.downloadHandler.text);
+            Debug.Log(scores);
+
+            string scoreText = "Top 20 Players\n";
+
+            foreach (ScoreBoardEntry entry in scores.scores)
+            {
+                scoreText += entry.username + "-" + entry.score + "-" + TimeSurvivedToString(entry.timeSurvived) + "\n";
+            }
+
+            scoreboard.text = scoreText;
+
+        }
+    }
+
+    string TimeSurvivedToString(float timeSurvived)
+    {
+        if (timeSurvived > 60)
+        {
+            return Mathf.Floor(timeSurvived / 60).ToString() + "m " + Mathf.Floor(timeSurvived % 60).ToString() + "s";
+
+        }
+        else
+        {
+            return Mathf.Floor(timeSurvived % 60).ToString() + "s";
+        }
     }
 
     public void EndGame()
     {
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 
     public void RestartGame()
@@ -145,7 +194,52 @@ public class UIManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void SubmitScore()
+    {
+        if (hasSubmittedScore)
+        {
+            return;
+        }
+        hasSubmittedScore = true;
+        StartCoroutine(PushScore(input.text));
+    }
 
+    IEnumerator PushScore(string username)
+    {
+        ScoreBoardEntry score = new ScoreBoardEntry(username, xp, timeSurvived);
+        UnityWebRequest wr = UnityWebRequest.Post("https://scoreboard.harrisowe.me/leaderboard/", JsonUtility.ToJson(score), "application/json");
+        yield return wr.SendWebRequest();
 
+        if (wr.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError(wr.error);
+        }
+        else
+        {
+            StartCoroutine(GetLeaderboard());
+        }
 
+    }
 }
+
+[Serializable]
+public class ScoreBoardEntry
+{
+    public ScoreBoardEntry(string username, int score, float timeSurvived)
+    {
+        this.username = username;
+        this.score = score;
+        this.timeSurvived = timeSurvived;
+    }
+
+    public string username;
+    public int score;
+    public float timeSurvived;
+}
+
+[Serializable]
+public class Scores
+{
+    public ScoreBoardEntry[] scores;
+}
+

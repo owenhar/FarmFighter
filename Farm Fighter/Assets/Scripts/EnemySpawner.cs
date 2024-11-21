@@ -94,7 +94,6 @@ public class EnemySpawner : MonoBehaviour
         {
             Instantiate(enemyPrefab, transform.position, Quaternion.identity);
             spawnTimer = spawnDelay + Random.Range(-1, 1);
-        }
-        
+        } 
     }
 }

@@ -46,7 +46,6 @@ public class WateringCan : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collision)
     {
-        Debug.Log("Staying in Trigger");
         if (collision.CompareTag("Water"))
         {
             if (waterAmount < maxWaterAmount)
