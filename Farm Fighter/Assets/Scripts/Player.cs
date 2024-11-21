@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 2.0f;
     [SerializeField] int maxHealth = 100;
-    [SerializeField] float attackDelay = 2f;
     private int health = 100;
     [SerializeField] float maxStamina = 100f;
     [SerializeField] float staminaRegenPerSecond = 20f;
@@ -19,6 +18,8 @@ public class Player : MonoBehaviour
     [SerializeField] Color nonSelectedColor;
     [SerializeField] Color selectedColor;
     [SerializeField] List<Sprite> walkingSprites;
+    SpriteRenderer sr;
+    Rigidbody2D rb;
     private int selectedItem = 0;
     private float stamina;
     private int xp = 0;
@@ -32,11 +33,11 @@ public class Player : MonoBehaviour
 
   
 
-    Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        sr = gameObject.GetComponent<SpriteRenderer>();
         health = maxHealth;
         stamina = maxStamina;
         int i = 0;
@@ -70,10 +71,19 @@ public class Player : MonoBehaviour
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");
         Vector3 move = new Vector3(moveX, moveY);
-
-
-
         move.Normalize();
+
+        sr.sprite = walkingSprites[0];
+        if (moveX > 0)
+        {
+            sr.sprite = walkingSprites[1];
+        } else if (moveX < 0)
+        {
+            sr.sprite = walkingSprites[3];
+        } else if (moveY > 0)
+        {
+            sr.sprite = walkingSprites[2];
+        }
 
         transform.Translate(move * moveSpeed * Time.deltaTime);
     }
@@ -174,7 +184,12 @@ public class Player : MonoBehaviour
     private void LevelUp()
     {
         lvl += 1;
-        if (lvl % 2 == 0)
+        if (lvl == 10)
+        {
+            MyEvents.displayAlertMessage.Invoke("LVL UP -- NEW WEAPON -- Located on the Upgrade Pedestal");
+            MyEvents.spawnUpgradeWeapon.Invoke();
+        }
+        else if (lvl % 2 == 0)
         {
             damageMultiplier += 0.1f;
             MyEvents.displayAlertMessage.Invoke("LVL UP -- Damage Multiplier: " + damageMultiplier);

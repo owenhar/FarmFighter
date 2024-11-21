@@ -145,12 +145,13 @@ public class UIManager : MonoBehaviour
         StartCoroutine(GetLeaderboard());
     }
 
+    // The UnityWebRequest logic was taken mostly from https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Get.html and https://stackoverflow.com/questions/46003824/sending-http-requests-in-c-sharp-with-unity
     IEnumerator GetLeaderboard()
     {
         UnityWebRequest uwr = UnityWebRequest.Get("https://scoreboard.harrisowe.me/leaderboard/");
         yield return uwr.SendWebRequest();
 
-        if (uwr.result == UnityWebRequest.Result.ConnectionError)
+        if (uwr.result != UnityWebRequest.Result.Success)
         {
             Debug.Log("Failed to retrieve leaderboard");
         }
@@ -159,11 +160,11 @@ public class UIManager : MonoBehaviour
             Scores scores = JsonUtility.FromJson<Scores>(uwr.downloadHandler.text);
             Debug.Log(scores);
 
-            string scoreText = "Top 20 Players\n";
+            string scoreText = "Scoreboard (Username - Score - Time Survived)\n";
 
             foreach (ScoreBoardEntry entry in scores.scores)
             {
-                scoreText += entry.username + "-" + entry.score + "-" + TimeSurvivedToString(entry.timeSurvived) + "\n";
+                scoreText += entry.username + " - " + entry.score + " - " + TimeSurvivedToString(entry.timeSurvived) + "\n";
             }
 
             scoreboard.text = scoreText;
@@ -204,6 +205,7 @@ public class UIManager : MonoBehaviour
         StartCoroutine(PushScore(input.text));
     }
 
+    // The UnityWebRequest logic was taken mostly from https://docs.unity3d.com/ScriptReference/Networking.UnityWebRequest.Get.html and https://stackoverflow.com/questions/46003824/sending-http-requests-in-c-sharp-with-unity
     IEnumerator PushScore(string username)
     {
         ScoreBoardEntry score = new ScoreBoardEntry(username, xp, timeSurvived);
@@ -222,6 +224,8 @@ public class UIManager : MonoBehaviour
     }
 }
 
+
+// I got some of this [Serializable] from in lab but also looked at https://docs.unity3d.com/2020.1/Documentation/Manual/JSONSerialization.html for information on JSON serilization for sending web requests.
 [Serializable]
 public class ScoreBoardEntry
 {

@@ -9,9 +9,13 @@ public class Weapon : MonoBehaviour
     float timer = 0;
     bool attackDisabled = false;
     [SerializeField] float attackDelay = 2.0f;
+    [SerializeField] Sprite upgradeSprite;
+
     CircleCollider2D cd;
+    SpriteRenderer sr;
     Player p;
     Animator animator;
+    private float weaponDamageMultipler = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +23,9 @@ public class Weapon : MonoBehaviour
         cd = gameObject.GetComponent<CircleCollider2D>();
         p = gameObject.GetComponentInParent<Player>();
         animator = gameObject.GetComponent<Animator>();
+        sr = gameObject.GetComponent<SpriteRenderer>();
+
+        MyEvents.upgradeWeapon.AddListener(UpgradeWeapon);
     }
 
     // Update is called once per frame
@@ -46,11 +53,18 @@ public class Weapon : MonoBehaviour
             {
                 if (collision.tag == "Enemy")
                 {
-                    collision.GetComponent<Enemy>().DamageEnemy(1 * p.GetDamageMultiplier());
+                    collision.GetComponent<Enemy>().DamageEnemy(weaponDamageMultipler * p.GetDamageMultiplier());
                 }
             }
             p.UseStamina(10);
-            
         }
+    }
+
+    private void UpgradeWeapon()
+    {
+        sr.sprite = upgradeSprite;
+        transform.rotation = Quaternion.identity;
+        sr.flipX = false;
+        weaponDamageMultipler = 1.5f;
     }
 }

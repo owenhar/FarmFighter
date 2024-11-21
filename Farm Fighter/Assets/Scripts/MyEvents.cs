@@ -19,5 +19,8 @@ public static class MyEvents
     public static UnityEvent plantPlanted = new UnityEvent();
     public static UnityEvent endGame = new UnityEvent();
 
+    public static UnityEvent spawnUpgradeWeapon = new UnityEvent();
+    public static UnityEvent upgradeWeapon = new UnityEvent();
+
 
 }
