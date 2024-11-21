@@ -16,6 +16,7 @@ public class Weapon : MonoBehaviour
     Player p;
     Animator animator;
     private float weaponDamageMultipler = 1f;
+    bool isUpgraded = false;
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +47,13 @@ public class Weapon : MonoBehaviour
         }
         if (Input.GetButtonDown("Fire1") && !attackDisabled && p.GetStamina() > 10)
         {
-            animator.SetTrigger("Swing");
+            if (!isUpgraded)
+            {
+                animator.SetTrigger("Swing");
+            } else
+            {
+                animator.SetTrigger("SwingSword");
+            }
             List<GameObject> toKill = new List<GameObject>();
             Collider2D[] collisions = Physics2D.OverlapCircleAll(transform.position, cd.radius);
             foreach (Collider2D collision in collisions)
@@ -66,5 +73,6 @@ public class Weapon : MonoBehaviour
         transform.rotation = Quaternion.identity;
         sr.flipX = false;
         weaponDamageMultipler = 1.5f;
+        isUpgraded = true;
     }
 }

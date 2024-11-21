@@ -93,8 +93,11 @@ public class UIManager : MonoBehaviour
 
     void UpdateXpText(int xpGain)
     {
-        xp += xpGain;
-        xpText.text = "XP: " + xp;
+        if (gameRunning) // Stop player from accuring more xp after death
+        {
+            xp += xpGain;
+            xpText.text = "XP: " + xp;
+        }
     }
 
     void UpdateInventoryLabel(int index, int value)
