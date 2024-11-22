@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapon: {fileID: 1650097348}
-  upgradeEnabled: 1
+  upgradeEnabled: 0
 --- !u!212 &44016879
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64437,7 +64437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1650097349
 SpriteRenderer:
   m_ObjectHideFlags: 0
