@@ -31,6 +31,7 @@ public class UpgradePedestal : MonoBehaviour
         {
             MyEvents.upgradeWeapon.Invoke();
             Destroy(weapon);
+            upgradeEnabled = false;
         }
     }
 }

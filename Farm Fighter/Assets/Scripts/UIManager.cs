@@ -105,6 +105,7 @@ public class UIManager : MonoBehaviour
         inventoryLabels[index].text = value.ToString();
     }
 
+    // Displays alert message on the top of the screen.
     void DisplayAlertText(string message)
     {
         alertText.text = message;
@@ -132,14 +133,7 @@ public class UIManager : MonoBehaviour
         }
         panel.SetActive(true);
         gameRunning = false;
-        if (timeSurvived > 60)
-        {
-            timeText.text = Mathf.Floor(timeSurvived / 60).ToString() + "m " + Mathf.Floor(timeSurvived % 60).ToString() +"s";
-            
-        } else
-        {
-            timeText.text = Mathf.Floor(timeSurvived % 60).ToString() + "s";
-        }
+        timeText.text = TimeSurvivedToString(timeSurvived);
         killsText.text = kills.ToString();
         finalXPText.text = xp.ToString();
         plantText.text = plants.ToString();

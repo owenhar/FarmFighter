@@ -60,7 +60,7 @@ public class EnemySpawner : MonoBehaviour
     void ShootProjectiles()
     {
         Debug.Log("Shooting Projectiles");
-        Vector3[] directions = { Vector3.up, Vector3.up + Vector3.right, Vector3.right, Vector3.right + Vector3.down, Vector3.down, Vector3.down + Vector3.left, Vector3.left, Vector3.left + Vector3.up};
+        Vector3[] directions = { Vector3.up, Vector3.up + Vector3.right, Vector3.right, Vector3.right + Vector3.down, Vector3.down, Vector3.down + Vector3.left, Vector3.left, Vector3.left + Vector3.up}; // All 8 directions the projectiles shoot
         foreach (Vector3 v in directions)
         {
             GameObject go = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
@@ -93,7 +93,7 @@ public class EnemySpawner : MonoBehaviour
         if (spawnEnabled)
         {
             Instantiate(enemyPrefab, transform.position, Quaternion.identity);
-            spawnTimer = spawnDelay + Random.Range(-1, 1);
+            spawnTimer = spawnDelay + Random.Range(-3f, 3f);
         } 
     }
 }

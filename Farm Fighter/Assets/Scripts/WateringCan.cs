@@ -30,7 +30,7 @@ public class WateringCan : MonoBehaviour
             Vector3 worldCord = Camera.main.ScreenToWorldPoint(mouseLocation);
             worldCord.z = 0;
             Vector3 waterCord = worldCord + new Vector3(Random.Range(-2f, 2f), Random.Range(-2f, 2f)).normalized * Random.Range(-2f, 2f);
-            Instantiate(waterPrefab, waterCord, Quaternion.identity);
+            Instantiate(waterPrefab, waterCord, Quaternion.identity); // Spawns water "particles" -- not actually particles I couldn't figure this out, just spawns a gameObject that destroys itself after a bit
             Collider2D[] collisions = Physics2D.OverlapCircleAll(worldCord, 2);
             foreach (Collider2D c in collisions)
             {

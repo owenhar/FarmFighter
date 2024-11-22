@@ -46668,8 +46668,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -46734,8 +46734,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 647.99744, y: -16.279297}
-  m_SizeDelta: {x: 573.9947, y: 780.557}
+  m_AnchoredPosition: {x: 596.14215, y: -16.279297}
+  m_SizeDelta: {x: 677.7053, y: 780.557}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &771404915
 GameObject:
@@ -66433,6 +66433,10 @@ PrefabInstance:
     - target: {fileID: 1191563984478488225, guid: e83453456ad9fea43b5cc73804103362, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401622903050719943, guid: e83453456ad9fea43b5cc73804103362, type: 3}
+      propertyPath: orthographic size
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5735604053407747057, guid: e83453456ad9fea43b5cc73804103362, type: 3}
       propertyPath: m_LocalPosition.x

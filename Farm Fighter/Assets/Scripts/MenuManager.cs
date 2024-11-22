@@ -50,7 +50,7 @@ public class MenuManager : MonoBehaviour
             Scores scores = JsonUtility.FromJson<Scores>(uwr.downloadHandler.text);
             Debug.Log(scores);
 
-            string scoreText = "Top 20 Players\n";
+            string scoreText = "Scoreboard (Username - Score - Time Survived)\n";
 
             foreach (ScoreBoardEntry entry in scores.scores)
             {
